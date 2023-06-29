@@ -35,10 +35,10 @@ default:
             validate_certificate: false
 
     PaulGibbs\WordpressBehatExtension:
-      path: %paths.base%/tmp/antispam-bee/     # [!] Change this for your local development.
+      path: /tmp/antispam-bee/     # [!] Change this for your local development.
       default_driver: wpcli
       wpcli:
-        binary: %paths.base%/vendor/bin/wp
+        binary: /vendor/bin/wp
       database:
         restore_after_test: true
       users:
